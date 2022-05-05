@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js"></script>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="calc-container">
+        <div id="input"></div>
+      </div>
+      <div id="buttons__container">
+        <div class="btn btn-operator" onclick="clr()">C</div>
+        <div class="btn btn-operator" onclick="del()">⌫</div>
+        <div class="btn btn-operator" onclick="insertnum('/')">/</div>
+        <div class="btn btn-operator" onclick="insertnum('*')">×</div>
+
+        <div class="btn btn-num" onclick="insertnum('7')">7</div>
+        <div class="btn btn-num" onclick="insertnum('8')">8</div>
+        <div class="btn btn-num" onclick="insertnum('9')">9</div>
+        <div class="btn btn-operator" onclick="insertnum('-')">-</div>
+
+        <div class="btn btn-num" onclick="insertnum('4')">4</div>
+        <div class="btn btn-num" onclick="insertnum('5')">5</div>
+        <div class="btn btn-num" onclick="insertnum('6')">6</div>
+        <div class="btn btn-operator" onclick="insertnum('+')">+</div>
+
+        <div class="btn btn-num" onclick="insertnum('1')">1</div>
+        <div class="btn btn-num" onclick="insertnum('2')">2</div>
+        <div class="btn btn-num" onclick="insertnum('3')">3</div>
+        <div class="btn btn-operator equal" onclick="equalto()">=</div>
+        <div class="btn btn-num" onclick="insertnum('.')">.</div>
+        <div class="btn btn-num dot" onclick="insertnum('0')">0</div>
+      </div>
+      <div class="footer">
+        <p>Simple Calculator project using JS made by Muhammad Umar</p>
+        </div>
+    </div>
+    
+  </body>
+</html>
